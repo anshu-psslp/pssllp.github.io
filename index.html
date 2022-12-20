@@ -1,12 +1,7 @@
 <html>
     <body>
-        <h3 style="text-align:center">This is Polestar's Test Bot</h3>
+      <h3 style="text-align:center">This is the Test Bot for NOVO NORDISK built by POLESTAR</h3>
         <script>!(function () {
-            const conversation = JSON.parse(JSON.stringify(window.localStorage.getItem("chat_session")));
-
-            if (conversation?.conversation) {conversation.conversation = [];}
-
-            window.localStorage.setItem("chat_session", JSON.stringify(conversation));
             let e = document.createElement("script"),
               t = document.head || document.getElementsByTagName("head")[0];
             (e.src =
@@ -17,9 +12,9 @@
                 window.WebChat.default(
                   {
                     customData: { language: "en" },
-                    socketUrl: "https://c8df-116-206-158-95.in.ngrok.io",
+                    socketUrl: "https://d416-45-251-51-65.in.ngrok.io",
                     // add other props here
-                    title: "Polestar Bot",
+                    title: "I am a Bot",
                     subtitle: "Say 'Hi' to get started",
                   },
                   null
